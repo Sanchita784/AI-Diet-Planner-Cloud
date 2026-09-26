@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Uploaded Diet Documents</title>
+</head>
+
+<body>
+
+    <h1>My Uploaded Diet Documents</h1>
+
+    {% if uploaded_files %}
+
+        {% for file in uploaded_files %}
+
+            <hr>
+
+            <h3>File Name:</h3>
+            <p>{{ file[2] }}</p>
+
+            <p>
+                <strong>Uploaded:</strong>
+                {{ file[4] }}
+            </p>
+
+            <a href="{{ file[3] }}" target="_blank">
+                <button>Open Cloud File</button>
+            </a>
+
+        {% endfor %}
+
+    {% else %}
+
+        <p>No diet documents uploaded yet.</p>
+
+    {% endif %}
+
+    <br><br>
+
+    <a href="/dashboard">
+        <button>Back to Dashboard</button>
+    </a>
+
+</body>
+</html>

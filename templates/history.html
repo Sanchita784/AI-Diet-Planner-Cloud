@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diet History - AI Diet Planner</title>
+</head>
+
+<body>
+
+    <h1>My Diet History</h1>
+
+    {% if diet_history %}
+
+        {% for history in diet_history %}
+
+            <hr>
+
+            <h2>Goal: {{ history[2] }}</h2>
+
+            <p><strong>Breakfast:</strong> {{ history[3] }}</p>
+
+            <p><strong>Lunch:</strong> {{ history[4] }}</p>
+
+            <p><strong>Evening Snack:</strong> {{ history[5] }}</p>
+
+            <p><strong>Dinner:</strong> {{ history[6] }}</p>
+
+            <p><strong>Created:</strong> {{ history[7] }}</p>
+
+        {% endfor %}
+
+    {% else %}
+
+        <p>No diet history available.</p>
+
+    {% endif %}
+
+    <br>
+
+    <a href="/dashboard">
+        <button>Back to Dashboard</button>
+    </a>
+
+</body>
+</html>

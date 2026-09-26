@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Goal - AI Diet Planner</title>
+</head>
+
+<body>
+
+    <h1>Select Your Goal</h1>
+
+    <form action="/diet" method="POST">
+
+        <label>Choose your goal:</label>
+
+        <select name="goal" required>
+
+            <option value="weight_loss">Weight Loss</option>
+
+            <option value="weight_gain">Weight Gain</option>
+
+            <option value="maintenance">Maintain Weight</option>
+
+        </select>
+
+        <br><br>
+
+        <button type="submit">Generate Diet Plan</button>
+
+    </form>
+
+</body>
+</html>
