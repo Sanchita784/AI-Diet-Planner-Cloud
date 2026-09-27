@@ -1,13 +1,13 @@
-Project Overview
+Project Overview:
 A Flask-based web application that helps users generate personalized diet plans based on their age and selected goal.
 The application provides user registration, secure login, diet-plan generation, diet history, file uploads, cloud storage, and REST APIs.
 The project demonstrates the integration of Python, Flask, SQLite, rule-based recommendations, REST APIs, and Cloudinary cloud storage. 
 
-Problem Statement
+Problem Statement:
 Planning a suitable daily diet can be difficult for users who want simple recommendations based on their personal goals.
 This project provides a web-based platform where users can select a goal, generate a personalized diet plan, save their diet history, and store related files in the cloud.
 
-Key Features
+Key Features:
 User registration and login
 Password hashing
 Session-based authentication
@@ -22,7 +22,7 @@ Protected API routes
 File type and file-size validation
 Environment-variable based configuration
 
-How It Works
+How It Works:
 User
   |
   v
@@ -49,7 +49,7 @@ Cloudinary
   v
 Cloud File Storage
 
-Technology Stack
+Technology Stack:
 Programming Language: Python
 Backend: Flask
 Frontend: HTML, CSS
@@ -59,7 +59,7 @@ Security: Werkzeug password hashing, Flask sessions
 Configuration: python-dotenv
 Version Control: Git and GitHub
 
-Recommendation Engine
+Recommendation Engine:
 The project uses a rule-based recommendation engine implemented in Python.
 The engine takes the useage and selected goal as inputs and generates a diet plan containing:
 Breakfast
@@ -68,7 +68,7 @@ Evening Snack
 Dinner
 The current implementation uses predefined rules rather than a machine-learning or generative-AI model.
 
-Cloud Storage
+Cloud Storage:
 Cloudinary is integrated for cloud-based file storage.
 The application supports uploading:
 PDF
@@ -79,7 +79,7 @@ The application validates the file type and maximum file size before uploading.
 After a successful upload, Cloudinary provides a secure URL that can be used to access the stored file.
 
 Authentication & Database
-Authentication
+Authentication:
 The application provides:
 User registration
 Login
@@ -98,7 +98,7 @@ Generated meals
 Uploaded-file records
 Cloud storage URLs
 
-REST APIs
+REST APIs:
 The application provides the following REST API endpoints:
 /api/profile
 /api/diet
@@ -106,7 +106,8 @@ The application provides the following REST API endpoints:
 /api/uploaded-files
 
 The API routes are protected and require an authenticated user session.
-Project Structure
+
+Project Structure:
 AI-Diet-Planner-Cloud/
 │
 ├── app.py
@@ -138,7 +139,8 @@ AI-Diet-Planner-Cloud/
     ├── history.html
     ├── upload.html
     └── files.html
- Installation & Setup
+    
+ Installation & Setup:
 Install the required dependencies:
 pip install flask cloudinary python-dotenv werkzeug
 
@@ -155,7 +157,7 @@ Open the local URL displayed in the terminal.
 and accessed through its generated URL.
 
 
-Testing & Results
+Testing & Results:
 The following functionality has been tested successfully:
 User registration
 User login
@@ -174,7 +176,7 @@ File type validation
 File-size validation
 The uploaded test file was successfully stored in Cloudinary and accessed through its generated URL.
 
-Limitations & Future Improvements
+Limitations & Future Improvements:
 Current Limitations
 The recommendation engine is rule-based.
 No machine-learning or generative-AI model is currently integrated.
